@@ -71,7 +71,7 @@ const GroupParticipantManager = ({ setTopics }) => {
           <input
             id="participant-name"
             type="text"
-            placeholder="Enter your name"
+            placeholder="Enter your name/unique ID"
             value={participantName}
             onChange={(e) => setParticipantName(e.target.value)}
             className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"

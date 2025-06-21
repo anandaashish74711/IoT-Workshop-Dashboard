@@ -1,62 +1,17 @@
 [
-  {
-    "group": "group1",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group2",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group3",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group4",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group5",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group6",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group7",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group8",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group9",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group10",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group11",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group12",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group13",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group14",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  },
-  {
-    "group": "group15",
-    "topics": ["temperature", "humidity", "airquality", "EEG"]
-  }
+  { "group": "Alpha", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Beta", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Gamma", "topics": ["temperature", "IMU", "IMUEXG", "EXG"]},
+  { "group": "Delta", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Epsilon", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Zeta", "topics": ["temperature", "IMU", "IMUEXG", "EXG"]},
+  { "group": "Eta", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Theta", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Iota", "topics": ["temperature", "IMU", "IMUEXG", "EXG"]},
+  { "group": "Kappa", "topics": ["temperature", "IMU", "IMUEXG", "EXG"]},
+  { "group": "Lambda", "topics":["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Mu", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Nu", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Omicron", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] },
+  { "group": "Pi", "topics": ["temperature", "IMU", "IMUEXG", "EXG"] }
 ]
