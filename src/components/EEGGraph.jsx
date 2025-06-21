@@ -3,11 +3,11 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 
 const EEGGraph = ({ messages }) => {
   const data = messages.map((msg, index) => ({
-    time: msg.timestamp || index,
-    value: parseFloat(msg.content) || 0,
+    time: msg.time || index,              // use msg.time for x-axis
+    value: parseFloat(msg.filter) || 0,   // use msg.filter for y-axis
   }));
 
-  const limitedData = data.slice(-30);
+  const limitedData = data.slice(-30);  // last 30 points
 
   return (
     <div className="bg-white rounded-lg shadow-md p-4 border border-gray-200 h-[45vh] flex flex-col">
@@ -19,26 +19,20 @@ const EEGGraph = ({ messages }) => {
           <ResponsiveContainer width="100%" height="100%">
             <LineChart
               data={limitedData}
-              margin={{ top: 5, right: 5, left: 0, bottom: 20 }}  // removed left padding
+              margin={{ top: 5, right: 5, left: 0, bottom: 20 }}
             >
-              {/* Grid */}
               <CartesianGrid stroke="#e0e0e0" strokeDasharray="3 3" />
-
-              {/* X Axis */}
               <XAxis 
                 dataKey="time"
                 tick={{ fontSize: 10 }}
                 stroke="#8884d8"
               />
-
-              {/* Y Axis */}
               <YAxis 
                 domain={['auto', 'auto']}
-                width={30}   // reduce YAxis width
+                width={30}
                 tick={{ fontSize: 10 }}
                 stroke="#8884d8"
               />
-
               <Tooltip />
               <Line
                 type="monotone"
